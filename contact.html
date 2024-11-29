@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    
+    <title>Contact</title>
+</head>
+<body>
+    
+    <header>
+
+    </header>
+    
+    <main>
+        <div class="contact">
+            <h1>Contactez-nous</h1>
+            <form action="" method="POST">
+                <label for="name"> Nom complet <img src="fichiers\id.png" alt="icone id"></label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="num"> Numéro <img src="fichiers\phone-call.png" alt="icone telephone"></label>
+                <input type="text" id="numero" name="numero" required>
+                    
+                <label for="email">Email <img src="fichiers\email.png" alt="icone mail"></label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <div class="case">
+                    <input type="checkbox" id="conditions" name="conditions" required>
+                    <label for="conditions">J'accepte les conditions d'utilisation</label>
+                </div>  
+                
+                <input type="submit" value="Envoyer">
+            </form>
+            
+    
+            <div class="form-footer">
+                <p>Besoin d'aide ? <a href="mailto:support@example.com">Contactez notre support</a></p>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

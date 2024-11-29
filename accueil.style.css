@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body html, .jaro {
+    font-family: "Jaro", Arial, Helvetica, sans-serif, serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #141414;
+    color: white;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------- */
+
+/* header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.786);
+    z-index: 100;
+    position: fixed;
+    flex-grow: 1;   /* Permet à l'élément de prendre de l'espace supplémentaire */
+    flex-shrink: 1; /* Permet à l'élément de se rétrécir si nécessaire */
+
+}
+.navbar .logo {
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar .logo strong{
+    font-size: xx-large;
+}
+.navbar .logo img {
+    height: 50px;
+}
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar nav ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.navbar .profil img {
+    height: 30px;
+    border-radius: 50%;
+    border: 3px, solid #ff5353;
+    cursor: pointer;
+
+}
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        background-color: transparent;
+
+    }
+    .navbar nav{
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    .navbar .logo {
+        font-size: 20px;
+    }
+    .navbar .profil img{
+        margin-top: 20%;
+    }
+}
+
+/* ------------------------------------------------------------ */
+/* video de fond */
+.videofond {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100vw;
+            height: 100vh;
+        
+            object-fit: cover; 
+            z-index: -1;
+}
+
+/* ----------------------------------------------------------- */
+/* affiches des films */
+
+.conteneur {
+    display: flex;
+    position: relative;
+    height: 50vh;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.affiches {
+    display: flex;
+
+}
+.affiches div{
+
+    width: 50%;
+    flex: 1;
+    cursor: pointer;
+    transition: all 0.8s ease;
+    border: 2px solid #ff5353;
+    border-radius: 10px;
+    filter: blur(2px);
+    margin-top: 640px;
+}
+.affiches div img{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 300px;
+    margin: 3%;
+    box-shadow: 10px 10px 15px rgba(101, 0, 0, 0.474)
+    
+}
+.affiches div:hover{
+    flex: 1.1;
+    filter: blur(0px);
+    box-shadow: 30px 30px 45px rgba(0, 0, 0, 0.907); /* Ombre portée */
+
+}
+
+/* ---------------------- */
+
+/* .titres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.titres ul {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Centrer le texte */
+    /* font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.5);  
+    padding: 5px;
+    border-radius: 5px;
+} */
+
+
+
+
+/* ------------------------------------- */
+/* pied de page*/
+
+.piedpage{
+    display: flex;
+    position: fixed;
+    padding: 10px 0;
+    justify-content: center;
+    text-align: center;
+    bottom: 20px;
+    width: 100vw;
+    background-color: transparent;
+
+}

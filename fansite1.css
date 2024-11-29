@@ -1,0 +1,159 @@
+body{background-color: rgb(24, 23, 23);
+    color: aliceblue;
+}
+
+@media (max-width: 1000px) {
+    .nav_r{
+        display: none;
+    }
+}
+
+@media (min-width:1001px){
+    .nav_r{
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        margin: 0% 5%;
+    }
+}
+@media (min-width:1001px){
+    .burger{
+        display: none;
+    }
+}
+.recherche{
+    margin: auto 20px auto auto;
+    height: 10px;
+    width: 15%;
+    padding: 10px;
+    background-color: gainsboro;
+    border-radius: 30px;
+    font-style: italic;
+}
+.a_nav{
+    text-decoration: none;
+    color: white;
+}
+.b_nav{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+ul{
+    text-decoration: none;
+}
+.p_syn {
+    display: flex;
+    justify-content: center;
+    
+}
+.photoacteur {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    gap: 10%;
+}
+.synopsis{
+    text-align: center;   
+    width: 50%;
+    font-family: 'Times New RomanA', Times, serif;
+}
+.synopsis2{
+    display: flex;
+    justify-content: center;
+    text-align: center;   
+    width: 50%;
+    font-family: 'Times New RomanA', Times, serif;
+}
+.synop2{
+    margin: 5%;
+}
+.p_syn2 {
+    display: flex;
+    justify-content: center; 
+}
+.photo1{
+    display: flex;
+    justify-content: center;
+}
+.photo2{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:1000px) {
+    .synop1 {display: none; };
+}
+@media (min-width:1001PX){
+    .synop2 {display: none; };
+}
+h3{
+    color: red;
+    text-align: center;
+}
+@media (min-width:1001px){
+    
+    .acteurs1{
+        margin-top: 6%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .acteurs1_1{
+        display: block;
+        padding-top: 10px;
+    }
+    .acteur1{
+        display: block;
+        width: 60%;
+        height: 5%;
+    }
+    .acteur2{
+        display: block;
+        width: 60%;
+        height: 5%;
+    }
+    .acteur3{
+        display: block;
+        width: 60%;
+        height: 5%;
+    }
+    .acteur4{
+        display: block;
+        width: 60%;
+        height: 5%;
+    }
+    .acteurs2{
+        display: none;
+    }
+}
+@media (max-width:1000px){
+    .acteurs1{
+        display: none;
+    }
+    .acteurs2{
+        text-align: center;
+    }
+}
+.media1{
+    margin-top: 3%;
+    text-align: center;
+    gap: 5%;
+    display:flow-root;
+    justify-content: space-evenly;
+    background: rgb(66, 65, 65);
+}
+.netflex{
+    height: 50px;
+}
+summary::marker{
+    content: none;
+}
