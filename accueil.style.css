@@ -124,7 +124,7 @@ body html, .jaro {
     transition: all 0.8s ease;
     border: 2px solid #ff5353;
     border-radius: 10px;
-    filter: blur(2px);
+    
     margin-top: 640px;
 }
 .affiches div img{
@@ -177,8 +177,9 @@ body html, .jaro {
     padding: 10px 0;
     justify-content: center;
     text-align: center;
-    bottom: 20px;
+    bottom: 5px;
     width: 100vw;
     background-color: transparent;
+    
 
 }
